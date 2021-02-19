@@ -27,29 +27,29 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
-// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  ~   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
+// |      |  _  |  +  |  {  |  }  |  "  |   | LFT | DWN |  UP | RGT |     |      |
+// |      |     |     |     |VOLDN|BRIDN|   |     |MUTE |     |     |     |      |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
-   &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
-   &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &trans &trans       &trans       &trans       &trans       &trans            &trans   &trans   &trans &trans    &trans &trans
-                                        &kp LGUI     &trans       &kp SPACE         &kp RET &trans &kp RALT
+   &kp TILDE &kp EXCL   &kp AT   &kp HASH  &kp DLLR     &kp PRCNT    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
+   &trans    &kp UNDER  &kp PLUS &kp LBRC  &kp RBRC     &kp DQT      &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &trans    &trans     &trans   &trans    &kp C_VOL_DN &kp C_BRI_DN &trans   &kp C_MUTE &trans &trans    &trans &trans
+                                        &trans &trans       &trans &trans &trans &trans
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
+// |      |  -  |  =  |  [  |  ]  |  '  |   |     |     |     |     |     |      |
+// |      |     |     |     |VOLUP|BRIUP|   |     |MUTE |     |     |     |      |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
-   &trans    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5            &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &trans
-   &kp LCTRL &trans    &trans  &trans    &trans    &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE &kp GRAVE
-   &kp LSHFT &trans    &trans  &trans    &trans    &trans      &trans    &trans    &trans          &trans   &kp BSLH &kp TILDE
-                                   &kp LGUI &trans &kp SPACE   &kp RET &trans &kp RALT
+   &kp GRAVE &kp N1    &kp N2    &kp N3    &kp N4       &kp N5       &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &trans
+   &trans    &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT     &kp SQT      &trans &trans &trans        &trans &trans &trans
+   &trans    &trans    &trans    &trans    &kp C_VOL_UP &kp C_BRI_UP &trans    &kp C_MUTE    &trans          &trans   &trans &trans
+                                        &trans &trans       &trans &trans &trans &trans
                         >;
                 };
         };

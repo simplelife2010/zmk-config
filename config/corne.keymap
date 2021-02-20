@@ -75,7 +75,7 @@
             bindings = <
    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-   &trans    &trans    &trans    &trans    &kp C_VOL_UP &kp C_BRI_UP &trans    &kp C_MUTE    &trans          &trans   &trans &trans
+   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
                                         &trans &trans       &mo 3 &trans &trans &trans
             >;
         };

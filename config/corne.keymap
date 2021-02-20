@@ -68,15 +68,15 @@
 
         adjust_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    |     |     |     |   |     |     |     |
+// |  `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
+// |      |  -  |  =  |  [  |  ]  |  '  |   |     |     |     |     |     |      |
+// |      |     |     |     |VOLUP|BRIUP|   |     |MUTE |     |     |     |      |
+//                    |     | ADJ |     |   |     |     |     |
             bindings = <
    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                                 &trans    &trans    &trans    &trans    &trans    &trans
+                                        &trans &trans       &mo 3 &trans &trans &trans
             >;
         };
     };
